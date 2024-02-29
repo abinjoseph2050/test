@@ -19,7 +19,7 @@ console.log(tableData);
       <table>
         <thead>
           <tr>
-            <th>Patients</th>
+            <th className='text-6xl'>Patients</th>
             <th>Date</th>
             <th>Time</th>
             <th>Doctor</th>
