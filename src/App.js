@@ -44,7 +44,7 @@ function App() {
                 <th>Time</th>
                 <th>Doctor</th>
                 <th>Injury</th>
-                <th className="action">Action</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -109,10 +109,12 @@ function App() {
                   </td>
 
                   {/* action column */}
-                  <td className="action" >
+                  <td>
+                  <div className="action-icon">
                   <div></div>
                   <div></div>
                   <div></div>
+                  </div>
                   </td>
                 </tr>
               ))}

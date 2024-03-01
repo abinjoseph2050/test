@@ -15,18 +15,22 @@
   width: 100%;
   height: 100%;
   padding: 20px;
-  border: 1px solid #bebebe;
+  border: 1px solid #bebebed5;
   border-radius: 20px;
 }
 
 .heading {
   width: 100%;
+  padding-inline-start: 15px;
   text-align: start;
+  font-size: 20px;
+  font-weight: 500;
+  color: #777;
 }
 
 .table-holder {
   padding: 5px;
-  margin: 15px;
+  margin-top: 15px;
   width: 100%;
   height: 100%;
 }
@@ -39,12 +43,6 @@ table {
 .head-row {
   background-color: rgba(235, 235, 235, 0.849);
 }
-
-/* .head-row .action {
-display: flex;
-justify-content: center;
-align-items: center;
-} */
 
 tr th:first-child {
   border-start-start-radius: 20px;
@@ -73,7 +71,7 @@ td:first-child {
 
 .data-row {
   padding: 50px 0;
-  border-top: 1px solid rgba(173, 173, 173, 0.918);
+  border-top: 1px solid #bebebed5;
 }
 
 .data-row .initials-circle {
@@ -123,23 +121,16 @@ td:first-child {
   color: #061458b4;
 }
 
-.action{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .action-icon{
-height: 100%;
+  cursor: pointer;
+  padding-inline-start: 25px;
 }
 
-.action div {
+.action-icon div {
   width: 5px;
   height: 5px;
   background: #cacaca;
   border-radius: 50%;
-  cursor: pointer;
   margin-top: 3px;
 }
 
