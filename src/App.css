@@ -1,42 +1,148 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.whole-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.table-container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid #bebebe;
+  border-radius: 20px;
 }
 
-.table-container{
-  
+.heading {
+  width: 100%;
+  text-align: start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-holder {
+  padding: 5px;
+  margin: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  height: 100%;
+  width: 100%;
+}
+
+.head-row {
+  background-color: rgba(235, 235, 235, 0.849);
+}
+
+/* .head-row .action {
+display: flex;
+justify-content: center;
+align-items: center;
+} */
+
+tr th:first-child {
+  border-start-start-radius: 20px;
+  padding-inline-start: 15px;
+}
+
+tr th:last-child {
+  border-start-end-radius: 20px;
+}
+
+tr th {
+  text-transform: uppercase;
+  text-align: start;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+td {
+  padding: 5px 0;
+}
+
+td:first-child {
+  padding-inline-start: 15px;
+}
+
+.data-row {
+  padding: 50px 0;
+  border-top: 1px solid rgba(173, 173, 173, 0.918);
+}
+
+.data-row .initials-circle {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-inline-end: 10px;
+}
+
+.column-align {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.mobile {
+  font-size: 13px;
+  color: #777;
+}
+
+.date,
+.time,
+.doctor {
+  color: #777;
+}
+
+.date .initials-circle,
+.time .initials-circle,
+.doctor .initials-circle {
+  width: 15px;
+  height: 15px;
+}
+
+.injury-data {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #d9e5ff;
+  max-width: max-content;
+  font-weight: 500;
+  color: #061458b4;
+}
+
+.action{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-icon{
+height: 100%;
+}
+
+.action div {
+  width: 5px;
+  height: 5px;
+  background: #cacaca;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.action div:first-child {
+  margin-top: 10px;
 }
